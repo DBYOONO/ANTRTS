@@ -3,3 +3,5 @@
 [node name="Node2D" type="Node2D"]
 position = Vector2(459, 350)
 scale = Vector2(100, 100)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
