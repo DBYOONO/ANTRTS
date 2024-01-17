@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://1rkkxph56ou5"]
+
+[ext_resource type="Script" path="res://bg.gd" id="1_ksrjw"]
+[ext_resource type="Texture2D" uid="uid://bibajkop4betc" path="res://RTSAssets/Sunny-land-files/Graphical Assets/environment/Background/back.png" id="1_ug5ti"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+script = ExtResource("1_ksrjw")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Back" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(574.5, 323.5)
+scale = Vector2(3.00781, 2.72083)
+texture = ExtResource("1_ug5ti")

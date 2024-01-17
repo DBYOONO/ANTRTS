@@ -1,7 +1,31 @@
-[gd_scene format=3 uid="uid://doax638djqa8n"]
+[gd_scene load_steps=4 format=3 uid="uid://doax638djqa8n"]
 
-[node name="Node2D" type="Node2D"]
-position = Vector2(459, 350)
-scale = Vector2(100, 100)
+[ext_resource type="Script" path="res://node_2d.gd" id="1_n712n"]
+[ext_resource type="PackedScene" uid="uid://1rkkxph56ou5" path="res://bg.tscn" id="1_two04"]
+[ext_resource type="Script" path="res://Label.gd" id="3_1trel"]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="World" type="Node2D"]
+script = ExtResource("1_n712n")
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_two04")]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 366.0
+offset_top = 171.0
+offset_right = 759.0
+offset_bottom = 308.0
+theme_override_font_sizes/font_size = 33
+text = "THE BUTTON
+"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 391.0
+offset_top = 321.0
+offset_right = 722.0
+offset_bottom = 351.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 21
+text = "YOU HAVE PUSHED THE BUTTON"
+script = ExtResource("3_1trel")
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
