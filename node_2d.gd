@@ -11,6 +11,13 @@ var number = 0
 func _process(delta):
 	pass
 
+func increaseby1():
+	if Global.number >= 10:
+		Global.multiplier += 1
 
 func _on_button_button_down():
-	Global.number += 1 
+	Global.number += (1 * Global.multiplier)
+
+
+func _on_button_2_button_down():
+	Global.multiplier += 1
