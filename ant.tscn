@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://bmfb7kdko3kxj"]
+
+[ext_resource type="Script" path="res://ant.gd" id="1_drjf3"]
+[ext_resource type="Texture2D" uid="uid://8lbr2jx4d8at" path="res://Sprite-0002.png" id="2_a7w6f"]
+[ext_resource type="Texture2D" uid="uid://cbhk4iht3bct3" path="res://Sprite-0003.png" id="3_jward"]
+[ext_resource type="Texture2D" uid="uid://b8sf4akgno6it" path="res://Sprite-0004.png" id="4_lxg6v"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3usfn"]
+radius = 1.0
+height = 2.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7jcrn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a7w6f")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_jward")
+}, {
+"duration": 0.8,
+"texture": ExtResource("4_lxg6v")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="AnimationRootNode" id="AnimationRootNode_ccmy7"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_drjf3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_3usfn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.1875, 0.1875)
+sprite_frames = SubResource("SpriteFrames_7jcrn")
+animation = &"idle"
+frame_progress = 0.868002
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationRootNode_ccmy7")
