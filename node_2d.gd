@@ -45,3 +45,7 @@ func _on_button_3_button_down():
 		print("Not Enough Money")
 		
 		
+
+
+func _on_toptrigger_mouse_entered():
+	pass # Replace with function body.

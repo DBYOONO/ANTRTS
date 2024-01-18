@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://doax638djqa8n"]
+[gd_scene load_steps=9 format=3 uid="uid://doax638djqa8n"]
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_n712n"]
 [ext_resource type="PackedScene" uid="uid://1rkkxph56ou5" path="res://bg.tscn" id="1_two04"]
@@ -8,22 +8,18 @@
 [ext_resource type="Script" path="res://Label2.gd" id="5_jx7nd"]
 [ext_resource type="Script" path="res://Label4.gd" id="6_en06y"]
 [ext_resource type="Script" path="res://Camera2D.gd" id="8_fd3em"]
-[ext_resource type="PackedScene" uid="uid://cmrhtjfnpw5jl" path="res://background.tscn" id="9_fcvki"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_n712n")
 
-[node name="ParallaxBackground2" parent="." instance=ExtResource("9_fcvki")]
-offset = Vector2(-300, 0)
-transform = Transform2D(1, 0, 0, 1, -300, 0)
-
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_two04")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-limit_left = -200
-limit_top = -200
-limit_right = 2120
-limit_bottom = 1280
+limit_left = 0
+limit_top = 0
+limit_right = 1920
+limit_bottom = 1080
+position_smoothing_enabled = true
 script = ExtResource("8_fd3em")
 
 [node name="Label" type="Label" parent="Camera2D"]
@@ -37,7 +33,6 @@ text = "$"
 script = ExtResource("3_1trel")
 
 [node name="toptrigger" type="Button" parent="Camera2D"]
-visible = false
 offset_left = -5.0
 offset_top = -3.0
 offset_right = 1922.0
@@ -115,6 +110,10 @@ text = "Upgrade The Button"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("6_en06y")
+
+[node name="Button4" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
 
 [connection signal="mouse_entered" from="Camera2D/toptrigger" to="Camera2D" method="_on_toptrigger_mouse_entered"]
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
