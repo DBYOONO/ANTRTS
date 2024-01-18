@@ -1,12 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://doax638djqa8n"]
+[gd_scene load_steps=6 format=3 uid="uid://doax638djqa8n"]
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_n712n"]
 [ext_resource type="PackedScene" uid="uid://1rkkxph56ou5" path="res://bg.tscn" id="1_two04"]
 [ext_resource type="Script" path="res://Label.gd" id="3_1trel"]
-[ext_resource type="Script" path="res://Label5.gd" id="3_1vvxy"]
 [ext_resource type="Script" path="res://Multiplier.gd" id="3_47jmh"]
 [ext_resource type="Script" path="res://Label2.gd" id="5_jx7nd"]
-[ext_resource type="Script" path="res://Label4.gd" id="6_en06y"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_n712n")
@@ -22,22 +20,11 @@ theme_override_font_sizes/font_size = 33
 text = "THE BUTTON
 "
 
-[node name="Label" type="Label" parent="Button"]
-layout_mode = 0
-offset_left = 57.0
-offset_top = 111.0
-offset_right = 258.0
-offset_bottom = 134.0
-theme_override_font_sizes/font_size = 12
-text = "$ PER CLICK"
-horizontal_alignment = 1
-script = ExtResource("3_1vvxy")
-
 [node name="Button2" type="Button" parent="."]
-offset_left = 441.0
-offset_top = 361.0
-offset_right = 695.0
-offset_bottom = 426.0
+offset_left = 439.0
+offset_top = 375.0
+offset_right = 693.0
+offset_bottom = 440.0
 theme_override_font_sizes/font_size = 33
 text = "
 "
@@ -45,23 +32,23 @@ text = "
 [node name="Multiplier" type="Label" parent="Button2"]
 layout_mode = 0
 offset_left = 1.0
-offset_top = 3.0
 offset_right = 254.0
-offset_bottom = 67.0
-theme_override_font_sizes/font_size = 16
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 28
 text = "MULTIPLIER"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_47jmh")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 10.0
-offset_top = 4.0
-offset_right = 641.0
-offset_bottom = 34.0
+offset_left = 246.0
+offset_top = 589.0
+offset_right = 877.0
+offset_bottom = 619.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 29
-text = "$"
+theme_override_font_sizes/font_size = 21
+text = "YOU HAVE PUSHED THE BUTTON"
+horizontal_alignment = 1
 script = ExtResource("3_1trel")
 
 [node name="Timer" type="Timer" parent="."]
@@ -70,32 +57,14 @@ wait_time = 0.1
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 365.0
-offset_top = 318.0
+offset_top = 332.0
 offset_right = 771.0
-offset_bottom = 362.0
+offset_bottom = 376.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "+"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("5_jx7nd")
 
-[node name="Button3" type="Button" parent="."]
-offset_left = 441.0
-offset_top = 434.0
-offset_right = 695.0
-offset_bottom = 495.0
-
-[node name="Label" type="Label" parent="Button3"]
-layout_mode = 0
-offset_left = 1.0
-offset_right = 255.0
-offset_bottom = 61.0
-theme_override_font_sizes/font_size = 15
-text = "Upgrade The Button"
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("6_en06y")
-
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]
-[connection signal="button_down" from="Button3" to="." method="_on_button_3_button_down"]

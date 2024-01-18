@@ -8,5 +8,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	text = "Multiplier: " + str(Global.multiplier) + "x"
+	text = "Passive income\n" + "$" + str(Global.cost) + " to upgrade"
 

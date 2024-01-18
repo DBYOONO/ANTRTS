@@ -3,8 +3,10 @@ extends Label
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	pass # Replace with function body.
 
-func _process(delta):
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-	text = "$" + str(Global.money)
+func _process(delta):
+
+	text = "$" + str(snapped(Global.multiplier * 60,0.01)) + " per second"
