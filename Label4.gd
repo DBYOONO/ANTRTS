@@ -8,4 +8,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	text = "Upgrade the button\n" + "$" + str(Global.upgradecost)
+	text = "Upgrade food\n" + "$" + str(Global.upgradecost)
+	visible = Global.feedbutton

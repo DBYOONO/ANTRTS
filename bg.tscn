@@ -31,6 +31,7 @@ sources/0 = SubResource("TileSetAtlasSource_8rsxw")
 script = ExtResource("1_ksrjw")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1920, 1080)
 
 [node name="TileMap" type="TileMap" parent="ParallaxLayer"]
 scale = Vector2(3, 3)

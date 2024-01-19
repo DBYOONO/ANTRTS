@@ -4,20 +4,20 @@ var target = null
 func _ready():
 	position.x = 960
 	position.y = 540
-	zoom.x = 1.5
-	zoom.y = 1.5
+	zoom.x = 1
+	zoom.y = 1
 
-func _input(event):
-	if event.is_action_pressed("zoom_in") && zoom.x <= 1.75 && zoom.y <= 1.75:
-		target = get_global_mouse_position()
-		zoom.x += 0.15
-		zoom.y += 0.15
-		position = target
-		
-	elif event.is_action_pressed("zoom_out") && zoom.x > 0.8 && zoom.y > 0.8:
-		#target = get_viewport_rect().size / 2
-		zoom.x -= 0.15
-		zoom.y -= 0.15
+#func _input(event):
+#	if event.is_action_pressed("zoom_in") && zoom.x <= 1.75 && zoom.y <= 1.75:
+#		target = get_global_mouse_position()
+#		zoom.x += 0.15
+#		zoom.y += 0.15
+#		position = target
+#		
+#	elif event.is_action_pressed("zoom_out") && zoom.x > 0.8 && zoom.y > 0.8:
+#		#target = get_viewport_rect().size / 2
+#		zoom.x -= 0.15
+#		zoom.y -= 0.15
 		#position = target
 
 

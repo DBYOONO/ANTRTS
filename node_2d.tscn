@@ -1,14 +1,124 @@
-[gd_scene load_steps=10 format=3 uid="uid://doax638djqa8n"]
+[gd_scene load_steps=63 format=3 uid="uid://doax638djqa8n"]
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_n712n"]
 [ext_resource type="PackedScene" uid="uid://1rkkxph56ou5" path="res://bg.tscn" id="1_two04"]
 [ext_resource type="Script" path="res://Label.gd" id="3_1trel"]
 [ext_resource type="Script" path="res://Label5.gd" id="3_1vvxy"]
-[ext_resource type="Script" path="res://Multiplier.gd" id="3_47jmh"]
+[ext_resource type="Script" path="res://Button.gd" id="4_wdevi"]
 [ext_resource type="Script" path="res://Label2.gd" id="5_jx7nd"]
 [ext_resource type="Script" path="res://Label4.gd" id="6_en06y"]
-[ext_resource type="Script" path="res://Camera2D.gd" id="8_fd3em"]
+[ext_resource type="Script" path="res://Button3.gd" id="7_cuu26"]
 [ext_resource type="PackedScene" uid="uid://cmrhtjfnpw5jl" path="res://background.tscn" id="9_fcvki"]
+[ext_resource type="Script" path="res://Button4.gd" id="9_wvuyc"]
+[ext_resource type="Script" path="res://Button5.gd" id="10_fu57m"]
+[ext_resource type="Texture2D" uid="uid://qlqnhcgmjy2d" path="res://fish1.png" id="11_3dfep"]
+[ext_resource type="Script" path="res://Button6.gd" id="11_nta26"]
+[ext_resource type="Texture2D" uid="uid://dnra62kir7xil" path="res://fish12.png" id="13_dusua"]
+[ext_resource type="Script" path="res://Fish11.gd" id="14_q53cd"]
+[ext_resource type="Script" path="res://Fish12.gd" id="15_0qsva"]
+[ext_resource type="Script" path="res://Fish13.gd" id="16_rhuir"]
+[ext_resource type="Script" path="res://Fish14.gd" id="17_8upyi"]
+[ext_resource type="Script" path="res://Fish15.gd" id="18_33vdj"]
+[ext_resource type="Script" path="res://Fish16.gd" id="19_rgmft"]
+[ext_resource type="Script" path="res://Fish17.gd" id="20_vscmj"]
+[ext_resource type="Script" path="res://Fish18.gd" id="21_6gbv4"]
+[ext_resource type="Script" path="res://Fish19.gd" id="22_s4aqq"]
+[ext_resource type="Script" path="res://Fish20.gd" id="23_y2si8"]
+[ext_resource type="Texture2D" uid="uid://7tsfhifh6qh4" path="res://clownfish.png" id="24_tkmhc"]
+[ext_resource type="Script" path="res://Button9.gd" id="24_w00hl"]
+[ext_resource type="Script" path="res://Button7.gd" id="25_0xwd8"]
+[ext_resource type="Script" path="res://Button8.gd" id="26_naxdn"]
+[ext_resource type="Texture2D" uid="uid://pkih2qn2lovq" path="res://clownfish2.png" id="28_veufg"]
+[ext_resource type="Script" path="res://clownfish11.gd" id="29_awcpu"]
+[ext_resource type="Script" path="res://clownfish12.gd" id="30_ybphy"]
+[ext_resource type="Script" path="res://clownfish13.gd" id="31_j88mg"]
+[ext_resource type="Script" path="res://clownfish14.gd" id="32_it2k0"]
+[ext_resource type="Script" path="res://clownfish15.gd" id="33_w4f3h"]
+[ext_resource type="Script" path="res://clownfish16.gd" id="34_5n4d2"]
+[ext_resource type="Script" path="res://clownfish17.gd" id="35_v42ip"]
+[ext_resource type="Script" path="res://clownfish18.gd" id="36_ybqe5"]
+[ext_resource type="Script" path="res://clownfish19.gd" id="37_16slq"]
+[ext_resource type="Script" path="res://clownfish20.gd" id="38_5bl56"]
+[ext_resource type="Script" path="res://Button12.gd" id="39_3yai2"]
+[ext_resource type="Texture2D" uid="uid://dahllncocpx6x" path="res://sailfish.png" id="39_cn12d"]
+[ext_resource type="Texture2D" uid="uid://cytms1ho3j5no" path="res://sailfish2.png" id="40_k8xed"]
+[ext_resource type="Script" path="res://Button10.gd" id="41_g4an4"]
+[ext_resource type="Script" path="res://sailfish11.gd" id="41_oe5k3"]
+[ext_resource type="Script" path="res://sailfish12.gd" id="42_w1d52"]
+[ext_resource type="Script" path="res://sailfish13.gd" id="43_ywwq3"]
+[ext_resource type="Script" path="res://sailfish14.gd" id="44_jf4ei"]
+[ext_resource type="Script" path="res://Button11.gd" id="46_loni8"]
+[ext_resource type="Script" path="res://Button15.gd" id="48_2vxhc"]
+[ext_resource type="Texture2D" uid="uid://c5yr8xqipojff" path="res://dolphin.png" id="48_exj4r"]
+[ext_resource type="Texture2D" uid="uid://c76nq0qo2lwio" path="res://dolphin2.png" id="49_653lr"]
+[ext_resource type="Script" path="res://Button13.gd" id="50_3dfcg"]
+[ext_resource type="Script" path="res://dolphin11.gd" id="50_oihfe"]
+[ext_resource type="Script" path="res://dolphin12.gd" id="51_kaknr"]
+[ext_resource type="Script" path="res://dolphin13.gd" id="52_1dxtt"]
+[ext_resource type="Script" path="res://dolphin14.gd" id="53_quaum"]
+[ext_resource type="Script" path="res://Label3.gd" id="55_2b7a8"]
+[ext_resource type="Script" path="res://Button14.gd" id="56_lpw54"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7rf8n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_3dfep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_dusua")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cj4kd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_tkmhc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_veufg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ux5rx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_cn12d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_k8xed")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j14c3"]
+animations = [{
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("48_exj4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_653lr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_n712n")
@@ -18,105 +128,399 @@ offset = Vector2(-300, 0)
 transform = Transform2D(1, 0, 0, 1, -300, 0)
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_two04")]
-
-[node name="Camera2D" type="Camera2D" parent="."]
-limit_left = -200
-limit_top = -200
-limit_right = 2120
-limit_bottom = 1280
-script = ExtResource("8_fd3em")
-
-[node name="Label" type="Label" parent="Camera2D"]
-offset_left = 10.0
-offset_top = 4.0
-offset_right = 641.0
-offset_bottom = 44.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 29
-text = "$"
-script = ExtResource("3_1trel")
-
-[node name="toptrigger" type="Button" parent="Camera2D"]
 visible = false
-offset_left = -5.0
-offset_top = -3.0
-offset_right = 1922.0
-offset_bottom = 100.0
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+scale = Vector2(0.252083, 1.69444)
+color = Color(1, 1, 1, 0.647059)
+polygon = PackedVector2Array(0, 0, 1920, 0, 1920, 540.955, 1920, 1080, 952.615, 1080, 0, 1080)
 
 [node name="Button" type="Button" parent="."]
-offset_left = 812.0
-offset_top = 171.0
-offset_right = 1113.0
-offset_bottom = 420.0
+offset_left = 39.0
+offset_top = 718.0
+offset_right = 442.0
+offset_bottom = 946.0
 theme_override_font_sizes/font_size = 43
-text = "THE BUTTON
-"
+script = ExtResource("4_wdevi")
 
 [node name="Label" type="Label" parent="Button"]
 layout_mode = 0
-offset_left = 49.0
-offset_top = 154.0
-offset_right = 250.0
-offset_bottom = 177.0
-theme_override_font_sizes/font_size = 18
+offset_left = 51.0
+offset_top = 66.0
+offset_right = 352.0
+offset_bottom = 164.0
+theme_override_font_sizes/font_size = 27
 text = "$ PER CLICK"
 horizontal_alignment = 1
 script = ExtResource("3_1vvxy")
-
-[node name="Button2" type="Button" parent="."]
-offset_left = 836.0
-offset_top = 561.0
-offset_right = 1090.0
-offset_bottom = 626.0
-theme_override_font_sizes/font_size = 33
-text = "
-"
-
-[node name="Multiplier" type="Label" parent="Button2"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 3.0
-offset_right = 254.0
-offset_bottom = 67.0
-theme_override_font_sizes/font_size = 16
-text = "MULTIPLIER"
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("3_47jmh")
 
 [node name="Timer" type="Timer" parent="."]
 process_callback = 0
 wait_time = 0.1
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 760.0
-offset_top = 518.0
-offset_right = 1166.0
-offset_bottom = 562.0
+offset_left = 39.0
+offset_top = 392.0
+offset_right = 442.0
+offset_bottom = 436.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
 text = "+"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("5_jx7nd")
 
 [node name="Button3" type="Button" parent="."]
-offset_left = 836.0
-offset_top = 634.0
-offset_right = 1090.0
-offset_bottom = 695.0
+offset_left = 39.0
+offset_top = 962.0
+offset_right = 442.0
+offset_bottom = 1056.0
+script = ExtResource("7_cuu26")
 
 [node name="Label" type="Label" parent="Button3"]
 layout_mode = 0
-offset_left = 1.0
-offset_right = 255.0
-offset_bottom = 61.0
+offset_left = 72.0
+offset_top = 15.0
+offset_right = 326.0
+offset_bottom = 76.0
 theme_override_font_sizes/font_size = 15
 text = "Upgrade The Button"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("6_en06y")
 
-[connection signal="mouse_entered" from="Camera2D/toptrigger" to="Camera2D" method="_on_toptrigger_mouse_entered"]
+[node name="Label" type="Label" parent="."]
+offset_left = 514.0
+offset_top = 14.0
+offset_right = 1145.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "$"
+script = ExtResource("3_1trel")
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 15.0
+offset_top = 14.0
+offset_right = 225.0
+offset_bottom = 99.0
+text = "FISH1"
+script = ExtResource("9_wvuyc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 232.0
+offset_top = 14.0
+offset_right = 344.0
+offset_bottom = 99.0
+text = "FISH1 UP
+"
+script = ExtResource("10_fu57m")
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 352.0
+offset_top = 14.0
+offset_right = 462.0
+offset_bottom = 99.0
+script = ExtResource("11_nta26")
+
+[node name="Fish1" type="Sprite2D" parent="."]
+position = Vector2(416, 56)
+scale = Vector2(7.07813, 7.12531)
+texture = ExtResource("11_3dfep")
+
+[node name="Fish11" type="AnimatedSprite2D" parent="."]
+position = Vector2(592, 936)
+scale = Vector2(6.11719, 6.78371)
+sprite_frames = SubResource("SpriteFrames_7rf8n")
+frame_progress = 0.146376
+script = ExtResource("14_q53cd")
+
+[node name="Fish12" type="AnimatedSprite2D" parent="."]
+position = Vector2(669, 865)
+scale = Vector2(6.11719, 6.78371)
+sprite_frames = SubResource("SpriteFrames_7rf8n")
+frame_progress = 0.59499
+script = ExtResource("15_0qsva")
+
+[node name="Fish13" type="AnimatedSprite2D" parent="."]
+position = Vector2(752, 938)
+scale = Vector2(6.11719, 6.78371)
+sprite_frames = SubResource("SpriteFrames_7rf8n")
+frame_progress = 0.59499
+script = ExtResource("16_rhuir")
+
+[node name="Fish14" type="AnimatedSprite2D" parent="."]
+position = Vector2(590, 790)
+scale = Vector2(6.11719, 6.78371)
+sprite_frames = SubResource("SpriteFrames_7rf8n")
+frame_progress = 0.59499
+script = ExtResource("17_8upyi")
+
+[node name="Fish15" type="AnimatedSprite2D" parent="."]
+position = Vector2(748, 790)
+scale = Vector2(6.11719, 6.78371)
+sprite_frames = SubResource("SpriteFrames_7rf8n")
+frame_progress = 0.59499
+script = ExtResource("18_33vdj")
+
+[node name="Fish16" type="AnimatedSprite2D" parent="."]
+position = Vector2(674, 721)
+scale = Vector2(6.11719, 6.78371)
+sprite_frames = SubResource("SpriteFrames_7rf8n")
+frame_progress = 0.59499
+script = ExtResource("19_rgmft")
+
+[node name="Fish17" type="AnimatedSprite2D" parent="."]
+position = Vector2(593, 650)
+scale = Vector2(6.11719, 6.78371)
+sprite_frames = SubResource("SpriteFrames_7rf8n")
+frame_progress = 0.59499
+script = ExtResource("20_vscmj")
+
+[node name="Fish18" type="AnimatedSprite2D" parent="."]
+position = Vector2(753, 650)
+scale = Vector2(6.11719, 6.78371)
+sprite_frames = SubResource("SpriteFrames_7rf8n")
+frame_progress = 0.59499
+script = ExtResource("21_6gbv4")
+
+[node name="Fish19" type="AnimatedSprite2D" parent="."]
+position = Vector2(608, 541)
+scale = Vector2(6.11719, 6.78371)
+sprite_frames = SubResource("SpriteFrames_7rf8n")
+frame_progress = 0.59499
+script = ExtResource("22_s4aqq")
+
+[node name="Fish20" type="AnimatedSprite2D" parent="."]
+position = Vector2(722, 547)
+scale = Vector2(6.11719, 6.78371)
+sprite_frames = SubResource("SpriteFrames_7rf8n")
+frame_progress = 0.59499
+script = ExtResource("23_y2si8")
+
+[node name="Button9" type="Button" parent="."]
+offset_left = 352.0
+offset_top = 107.0
+offset_right = 462.0
+offset_bottom = 192.0
+script = ExtResource("24_w00hl")
+
+[node name="Clownfish1" type="Sprite2D" parent="."]
+position = Vector2(417, 156)
+scale = Vector2(7.28125, 7.28125)
+texture = ExtResource("24_tkmhc")
+
+[node name="Button7" type="Button" parent="."]
+offset_left = 15.0
+offset_top = 107.0
+offset_right = 225.0
+offset_bottom = 192.0
+script = ExtResource("25_0xwd8")
+
+[node name="Button8" type="Button" parent="."]
+offset_left = 232.0
+offset_top = 107.0
+offset_right = 344.0
+offset_bottom = 192.0
+script = ExtResource("26_naxdn")
+
+[node name="clownfish11" type="AnimatedSprite2D" parent="."]
+position = Vector2(896, 945)
+scale = Vector2(5.48438, 5.60275)
+sprite_frames = SubResource("SpriteFrames_cj4kd")
+frame_progress = 0.565233
+script = ExtResource("29_awcpu")
+
+[node name="clownfish12" type="AnimatedSprite2D" parent="."]
+position = Vector2(851, 855)
+scale = Vector2(5.48438, 5.60275)
+sprite_frames = SubResource("SpriteFrames_cj4kd")
+frame_progress = 0.146895
+script = ExtResource("30_ybphy")
+
+[node name="clownfish13" type="AnimatedSprite2D" parent="."]
+position = Vector2(984, 855)
+scale = Vector2(5.48438, 5.60275)
+sprite_frames = SubResource("SpriteFrames_cj4kd")
+frame_progress = 0.146895
+script = ExtResource("31_j88mg")
+
+[node name="clownfish14" type="AnimatedSprite2D" parent="."]
+position = Vector2(1029, 945)
+scale = Vector2(5.48438, 5.60275)
+sprite_frames = SubResource("SpriteFrames_cj4kd")
+frame_progress = 0.146895
+script = ExtResource("32_it2k0")
+
+[node name="clownfish15" type="AnimatedSprite2D" parent="."]
+position = Vector2(896, 756)
+scale = Vector2(5.48438, 5.60275)
+sprite_frames = SubResource("SpriteFrames_cj4kd")
+frame_progress = 0.146895
+script = ExtResource("33_w4f3h")
+
+[node name="clownfish16" type="AnimatedSprite2D" parent="."]
+position = Vector2(1027, 695)
+scale = Vector2(5.48438, 5.60275)
+sprite_frames = SubResource("SpriteFrames_cj4kd")
+frame_progress = 0.146895
+script = ExtResource("34_5n4d2")
+
+[node name="clownfish17" type="AnimatedSprite2D" parent="."]
+position = Vector2(896, 612)
+scale = Vector2(5.48438, 5.60275)
+sprite_frames = SubResource("SpriteFrames_cj4kd")
+frame_progress = 0.146895
+script = ExtResource("35_v42ip")
+
+[node name="clownfish18" type="AnimatedSprite2D" parent="."]
+position = Vector2(1043, 576)
+scale = Vector2(5.48438, 5.60275)
+sprite_frames = SubResource("SpriteFrames_cj4kd")
+frame_progress = 0.146895
+script = ExtResource("36_ybqe5")
+
+[node name="clownfish19" type="AnimatedSprite2D" parent="."]
+position = Vector2(896, 522)
+scale = Vector2(5.48438, 5.60275)
+sprite_frames = SubResource("SpriteFrames_cj4kd")
+frame_progress = 0.146895
+script = ExtResource("37_16slq")
+
+[node name="clownfish20" type="AnimatedSprite2D" parent="."]
+position = Vector2(896, 522)
+scale = Vector2(5.48438, 5.60275)
+sprite_frames = SubResource("SpriteFrames_cj4kd")
+frame_progress = 0.146895
+script = ExtResource("38_5bl56")
+
+[node name="Button12" type="Button" parent="."]
+offset_left = 352.0
+offset_top = 200.0
+offset_right = 462.0
+offset_bottom = 285.0
+script = ExtResource("39_3yai2")
+
+[node name="Sailfish" type="Sprite2D" parent="."]
+position = Vector2(404, 258)
+scale = Vector2(4.125, 4.125)
+texture = ExtResource("39_cn12d")
+
+[node name="sailfish11" type="AnimatedSprite2D" parent="."]
+position = Vector2(1196.94, 953.192)
+scale = Vector2(7.56641, 6.83939)
+sprite_frames = SubResource("SpriteFrames_ux5rx")
+frame_progress = 0.741719
+script = ExtResource("41_oe5k3")
+
+[node name="sailfish12" type="AnimatedSprite2D" parent="."]
+position = Vector2(1318, 855)
+scale = Vector2(7.37891, 6.6699)
+sprite_frames = SubResource("SpriteFrames_ux5rx")
+frame_progress = 0.150429
+script = ExtResource("42_w1d52")
+
+[node name="sailfish13" type="AnimatedSprite2D" parent="."]
+position = Vector2(1208, 748)
+scale = Vector2(7.4375, 6.72287)
+sprite_frames = SubResource("SpriteFrames_ux5rx")
+frame_progress = 0.150429
+script = ExtResource("43_ywwq3")
+
+[node name="sailfish14" type="AnimatedSprite2D" parent="."]
+position = Vector2(1283.44, 617.028)
+scale = Vector2(7.78515, 7.03711)
+sprite_frames = SubResource("SpriteFrames_ux5rx")
+frame_progress = 0.150429
+script = ExtResource("44_jf4ei")
+
+[node name="Button10" type="Button" parent="."]
+offset_left = 15.0
+offset_top = 200.0
+offset_right = 225.0
+offset_bottom = 285.0
+script = ExtResource("41_g4an4")
+
+[node name="Button11" type="Button" parent="."]
+offset_left = 232.0
+offset_top = 200.0
+offset_right = 344.0
+offset_bottom = 285.0
+script = ExtResource("46_loni8")
+
+[node name="Button15" type="Button" parent="."]
+offset_left = 352.0
+offset_top = 294.0
+offset_right = 462.0
+offset_bottom = 379.0
+script = ExtResource("48_2vxhc")
+
+[node name="Dolphin" type="Sprite2D" parent="."]
+position = Vector2(407, 331)
+scale = Vector2(3.82813, 3.82813)
+texture = ExtResource("48_exj4r")
+
+[node name="dolphin11" type="AnimatedSprite2D" parent="."]
+position = Vector2(1513, 962)
+scale = Vector2(11.18, 11.4908)
+sprite_frames = SubResource("SpriteFrames_j14c3")
+frame_progress = 0.555104
+script = ExtResource("50_oihfe")
+
+[node name="dolphin12" type="AnimatedSprite2D" parent="."]
+position = Vector2(1729, 800)
+scale = Vector2(11.18, 11.4908)
+sprite_frames = SubResource("SpriteFrames_j14c3")
+frame_progress = 0.925874
+script = ExtResource("51_kaknr")
+
+[node name="dolphin13" type="AnimatedSprite2D" parent="."]
+position = Vector2(1520, 656)
+scale = Vector2(11.18, 11.4908)
+sprite_frames = SubResource("SpriteFrames_j14c3")
+frame_progress = 0.780197
+script = ExtResource("52_1dxtt")
+
+[node name="dolphin14" type="AnimatedSprite2D" parent="."]
+position = Vector2(1734, 522)
+scale = Vector2(11.18, 11.4908)
+sprite_frames = SubResource("SpriteFrames_j14c3")
+frame_progress = 0.780197
+script = ExtResource("53_quaum")
+
+[node name="Button13" type="Button" parent="."]
+offset_left = 15.0
+offset_top = 294.0
+offset_right = 225.0
+offset_bottom = 379.0
+script = ExtResource("50_3dfcg")
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 808.0
+offset_top = 132.0
+offset_right = 1880.0
+offset_bottom = 402.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "Thanks for playing"
+script = ExtResource("55_2b7a8")
+
+[node name="Button14" type="Button" parent="."]
+offset_left = 232.0
+offset_top = 294.0
+offset_right = 344.0
+offset_bottom = 379.0
+script = ExtResource("56_lpw54")
+
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
-[connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]
 [connection signal="button_down" from="Button3" to="." method="_on_button_3_button_down"]
+[connection signal="button_down" from="Button4" to="." method="_on_button_4_button_down"]
+[connection signal="button_down" from="Button5" to="." method="_on_button_5_button_down"]
+[connection signal="button_down" from="Button7" to="." method="_on_button_7_button_down"]
+[connection signal="button_down" from="Button8" to="." method="_on_button_8_button_down"]
+[connection signal="button_down" from="Button10" to="." method="_on_button_10_button_down"]
+[connection signal="button_down" from="Button11" to="." method="_on_button_11_button_down"]
+[connection signal="button_down" from="Button13" to="." method="_on_button_13_button_down"]
+[connection signal="button_down" from="Button14" to="." method="_on_button_14_button_down"]

@@ -8,4 +8,4 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	text = "$" + str(Global.increment) + " per click"
+	text = "Feed fish\n" + "$" + str(Global.increment) + " per click"
